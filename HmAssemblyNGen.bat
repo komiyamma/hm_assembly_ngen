@@ -1,4 +1,17 @@
 @echo off
+
+rem 通常権限で実行されていば、管理者権限で実行しなおす。
+
+cd /d %~dp0
+for /f "tokens=3 delims=\ " %%i in ('whoami /groups^|find "Mandatory"') do set LEVEL=%%i
+if NOT "%LEVEL%"=="High" (
+powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -Command "Start-Process %~f0 -Verb runas"
+exit
+)
+
+rem これ以降の処理は管理者権限で実行される
+
+@echo off
 cd %~dp0
 echo %~dp0
 SET CURRENT_TMP_DIR=%~dp0
