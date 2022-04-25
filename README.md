@@ -1,6 +1,6 @@
 # HmAssemblyNGen
 
-![HmAssemblyNGen v1.1.1](https://img.shields.io/badge/HmAssemblyNGen-v1.1.1-6479ff.svg)
+![HmAssemblyNGen v1.1.2](https://img.shields.io/badge/HmAssemblyNGen-v1.1.2-6479ff.svg)
 [![CC0](https://img.shields.io/badge/license-CC0-blue.svg?style=flat)](LICENSE)
 ![.NET Framework 4.x](https://img.shields.io/badge/.NET_Framework-4.x-6479ff.svg?logo=windows&logoColor=white)
 
