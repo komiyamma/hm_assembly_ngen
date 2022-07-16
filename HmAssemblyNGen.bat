@@ -18,18 +18,18 @@ SET CURRENT_TMP_DIR=%~dp0
 SET CURRENT_TMP_DIR_WITHOUT_LAST_SEPARATOR=%CURRENT_TMP_DIR:~0,-1%
 echo %~dp0
 
-find hidemaru.exe "32bit edition"
+HmAppBitChecker hidemaru.exe
 
-if %ERRORLEVEL%==0 (
+if %ERRORLEVEL%==32 (
 	echo "秀丸エディタ 32bit版";
     for /R %targetdir% %%A in (*.dll) do (
         C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe install %%~fA /AppBase:"%CURRENT_TMP_DIR_WITHOUT_LAST_SEPARATOR%"
     )
 )
 
-find hidemaru.exe "64bit edition"
+HmAppBitChecker hidemaru.exe "64bit edition"
 
-if %ERRORLEVEL%==0 (
+if %ERRORLEVEL%==64 (
 	echo "秀丸エディタ 64bit版";
     for /R %targetdir% %%A in (*.dll) do (
         echo %%A
