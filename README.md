@@ -1,6 +1,6 @@
 # HmAssemblyNGen
 
-![HmAssemblyNGen v1.1.2](https://img.shields.io/badge/HmAssemblyNGen-v1.1.2-6479ff.svg)
+![HmAssemblyNGen v1.1.3](https://img.shields.io/badge/HmAssemblyNGen-v1.1.3-6479ff.svg)
 [![CC0](https://img.shields.io/badge/license-CC0-blue.svg?style=flat)](LICENSE)
 ![.NET Framework 4.x](https://img.shields.io/badge/.NET_Framework-4.x-6479ff.svg?logo=windows&logoColor=white)
 
@@ -8,5 +8,5 @@
 
 [https://秀丸マクロ.net/?page=nobu_tool_hm_assembly_ngen](https://秀丸マクロ.net/?page=nobu_tool_hm_assembly_ngen)
 
-HmAppBitChecker.exe のリポジトリはこちら
+HmAppBitChecker.exe のリポジトリはこちら  
 https://github.com/komiyamma/hm_app_bitchecker
