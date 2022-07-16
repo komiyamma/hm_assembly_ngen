@@ -27,8 +27,6 @@ if %ERRORLEVEL%==32 (
     )
 )
 
-HmAppBitChecker hidemaru.exe "64bit edition"
-
 if %ERRORLEVEL%==64 (
 	echo "秀丸エディタ 64bit版";
     for /R %targetdir% %%A in (*.dll) do (
